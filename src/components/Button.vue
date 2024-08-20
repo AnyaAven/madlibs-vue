@@ -4,7 +4,7 @@
       @click="onClick"
       :disabled="isDisabled">
     <p class="Button-label">
-      <slot></slot>
+      <slot>Select</slot>
     </p>
   </button>
 </template>

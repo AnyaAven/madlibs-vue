@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .StoryResults {
-  background-color: azure;
+  background-color: #2c4040;
   padding: 20px;
   border-radius: 20px;
 }
