@@ -33,7 +33,7 @@ export default {
     }
   },
   setup(props) {
-    const story = ref(null);
+    const story = ref(null)
     const titles = Object.keys(props.stories);
 
     const hasResult = computed(() => story.value?.result?.length > 0);
@@ -45,7 +45,7 @@ export default {
       story.value = new Story({
         title,
         prompts,
-        text
+        template: text
       });
 
       console.log("Updated selection:", {story: story.value })
@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 .MadlibApp {
-  background-color: lightgoldenrodyellow;
+  background-color: #4c4c4a;
   padding: 40px;
   border-radius: 20px;
   margin: 20px;
