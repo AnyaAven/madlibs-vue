@@ -7,27 +7,21 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Button from "./Button.vue";
 
 console.log("StoryResult");
 
-export default {
-  name: "StoryResult",
-  props: {
-    story: {
-      type: String,
-      required: true
-    },
-    restart: {
-      type: Function,
-      required: true
-    }
+defineProps({
+  story: {
+    type: String,
+    required: true
   },
-  components: {
-    Button
+  restart: {
+    type: Function,
+    required: true
   }
-};
+});
 </script>
 
 <style scoped>

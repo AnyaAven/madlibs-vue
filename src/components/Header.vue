@@ -5,18 +5,14 @@
   </header>
 </template>
 
-<script >
+<script setup >
 console.log("Header");
-
-export default {
-  name: "Header",
-  props: {
-    text: {
-      type: String,
-      default: () => "MadLibs Default!"
-    }
+defineProps({
+  text: {
+    type: String,
+    default: () => "MadLibs Default!"
   }
-}
+})
 </script>
 
 <style scoped>
